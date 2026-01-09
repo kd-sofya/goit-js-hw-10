@@ -26,13 +26,16 @@ const options = {
 
       if (selec <= day) {
           iziToast.error({
+            position: 'topRight',
             title: 'Error',
             message: 'Please choose a date in the future',
-});
+            });
           startBt.disabled = true;
-      } else
+      } else {
           userSelectedDate = selec;
-      startBt.disabled = false;
+          datetimePicker.disabled = false;
+          startBt.disabled = false;
+          }
   },
 };
  
