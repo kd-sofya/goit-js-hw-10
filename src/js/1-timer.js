@@ -33,7 +33,6 @@ const options = {
           startBt.disabled = true;
       } else {
           userSelectedDate = selec;
-          datetimePicker.disabled = false;
           startBt.disabled = false;
           }
   },
@@ -57,7 +56,6 @@ function functionStart() {
             minutes.textContent = '00';
             seconds.textContent = '00';
             datetimePicker.disabled = false;
-            startBt.disabled = false;
             return;
         }
 
